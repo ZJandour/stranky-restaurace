@@ -1,8 +1,8 @@
-# Steps to run the app
--Steps to run the app.
--Clone the repo.
--Open repo.
--To view the website, right-click on the index and select open to live server.
+# Steps to open
+- Steps to run the app.
+- Clone the repo.
+- Open repo.
+- To view the website, right-click on the index and select open to live server.
 
 # Page preview
 
