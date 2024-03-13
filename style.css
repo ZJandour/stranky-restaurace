@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****** reusable *****/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+/****** header *****/
+header{
+    background: linear-gradient(rgba(51, 48, 48, 0.7),rgba(71, 66, 66, 0.7)), url("images/mainPhoto1.jpeg");
+    background-size: cover;
+    height: 80vh;
+    min-height:500px;
+    background-attachment: fixed;
+}
+
+.nav-background{
+    position: fixed;
+    width: 100%;
+    height:60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    border-bottom: #fff;
+    
+}
+
+#logo img{
+    
+    position: absolute;
+    top: 15%;
+    max-lines: 20px;
+    color: #fff;
+    width: 8%;
+    margin-left: 7%;
+}
+
+nav ul {
+    float: right;
+    margin-top: 15px;
+    position: fixed;
+    margin-left: 28%;
+    z-index: 100;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    color: #fff;
+    margin-left: 30px;
+}
+
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a :active {
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid #dc4f00;
+}
+
+.headerText{
+    position:absolute;
+    top: 45%;
+    left: 28%;
+  /*  transform: translate(-50%, -50%);/*/
+    
+}
+
+
+
+.headerText h1{
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px; /* mezera mezy písmeny*/
+    word-spacing: 3.5px;/* mezera mezy slovy*/
+
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #dc4f00;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+
+
+
+.btn-full:link,
+.btn-full:visited {
+    background: #dc4f00;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    transition:1.5s;
+    background:  #a93d00;
+    border: 1px solid #a93d00;
+}
+
+.btn-empty:link,
+.btn-empty:visited{
+    margin-left: 5px;
+}
+.btn-empty:hover,
+.btn-empty:active {
+    transition: 1.5s;
+    background: #a93d00;
+    border: 1px solid #a93d00;
+}
+
+
+
+
+/****** mobil navigation *****/
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 5px;
+    display: none;
+    
+}
+
+.jq--image-hamburger{
+    width: 70%;
+}
+
+/****** About us *****/
+
+
+.food-example img{
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px #000;
+}
+   .heading-main h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 150%;
+    }
+
+    .heading-main h2:after {
+        content: "";
+        display: block;
+        width: 250px;
+        border-bottom: 2px solid #dc4f00;
+        margin: 5px auto;
+    }
+
+/****** O našm jídle *****/
+.food-info img{
+    width:100%;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px #000;
+}
+
+.food-text{
+    margin-bottom: 20px;
+}
+
+.food-text div{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    float: left;
+}
+
+.food-text p {
+    margin-left: 60px;
+}
+
+/****** reference *****/
+.reference{
+    background: linear-gradient(rgba(51, 48, 48, 0.7),rgba(71, 66, 66, 0.7)), url("images/mainPhoto1a.jpeg");
+    background-size: cover;
+    height: 80vh;
+    background-attachment:fixed;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1px;
+    padding-bottom: 25px;
+
+}
+
+.reference h2{
+    color: #fff;
+    padding-top:40px;
+}
+
+.reference h2::after{
+    border-bottom: 2px solid #fff;
+}
+
+.one-reference{
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p{
+    font-style: italic;
+}
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.photo-name p{
+    padding: 13px;
+    margin-left: 80px;
+    font-style: normal;
+}
+
+.photo-name img{
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    
+}
+.customer-referenc{
+    padding-bottom: 2%;
+}
+
+/****** photo galery *****/
+.photo-gallery{
+    padding-top: 10px;
+}
+.photo-segment li{
+    list-style-type: none;
+    background-color: #000;
+    overflow: hidden;
+    height: 300px;
+}
+.photo-segment img{
+    width: 100%;
+    height:300px;
+    opacity: 0.5;
+    transform: scale(1.15);
+}
+
+.photo-segment img:hover{
+    transition: transform 0.5, opacity 0.5;
+    transform: scale(1);
+    opacity: 1;
+}
+/****** Form *****/
+.contact{
+    padding-top:10px;
+}
+
+.contact-form{
+    max-width:700px;
+    text-align: center;
+}
+
+.contact-form input{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+
+.contact-form textarea{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    font-family: Arial;
+}
+
+input[type="submit"]{
+    background-color: #aa4309;
+    font-size: 20px;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    transition: background-color 0.5s;
+    background-color: #d67e4d;
+    color:#fff ;
+}
+
+/****** footer *****/
+.footer-page{
+    background: #aa4309;
+    margin-top: 50px;
+    color: #fff;
+    padding: 20px;
+}
+.social{
+    text-align: center;
+    margin: 15px o;
+}
+
+.social p{
+    display:inline;
+    margin-right: 20px;
+
+}
+
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color:#fff;
+    font-size:20px ;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: #000;
+}
+
+.footer-text{
+    text-align: center;
+    margin: 15px o;
+}
+
+/****** stop floating *****/
+.clearfix {zoom:1}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
