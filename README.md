@@ -1,7 +1,7 @@
-Steps to run the app.
-Clone the repo.
-Open repo.
-To view the website, right-click on the index and select open to live server.
+-Steps to run the app.
+-Clone the repo.
+-Open repo.
+-To view the website, right-click on the index and select open to live server.
 
 Preview of stands.
 ![image](https://github.com/ZJandour/stranky-restaurace/assets/127226529/8b9769d5-f765-4c77-ad3f-be3b3861d1bc)
